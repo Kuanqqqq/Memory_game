@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<!-- Game name and character set -->
+<head>
+		<meta charset="utf-8">
+		<title>EPL Memory Game</title>
+		<link rel="stylesheet" href="memory_game.css">
+</head>
+
+<!-- Main HTML body -->
+<body>
+		<script>
+				/* Get the documentElement (<html>) to display the page in fullscreen */
+				var elem = document.documentElement;
+				
+				/* View in fullscreen */
+				function openFullscreen() {
+				  if (elem.requestFullscreen) {
+					elem.requestFullscreen();
+				  } else if (elem.mozRequestFullScreen) { /* Firefox */
+					elem.mozRequestFullScreen();
+				  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+					elem.webkitRequestFullscreen();
+				  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+					elem.msRequestFullscreen();
+				  }
+				}
+				
+				/* Close fullscreen */
+				function closeFullscreen() {
+				  if (document.exitFullscreen) {
+					document.exitFullscreen();
+				  } else if (document.mozCancelFullScreen) { /* Firefox */
+					document.mozCancelFullScreen();
+				  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+					document.webkitExitFullscreen();
+				  } else if (document.msExitFullscreen) { /* IE/Edge */
+					document.msExitFullscreen();
+				  }
+				}
+
+	
+				</script>
+				<button onclick="openFullscreen();">Open Fullscreen</button>
+				<button onclick="closeFullscreen();">Close Fullscreen</button>	
+
+				<form id="button" action="menu.html">
+						<input name = "submit" type="image" src="imgs/back.png" />
+					</form>		
+
+	<!-- <div class="module-border-wrap"><div class="module"> -->
+	
+	
+	<div class="grid">
+
+
+
+		<div class="boxed2">
+
+			<div class="boxed">
+
+					<div class="moveboxed">
+							<p> <span class="Score" id=score>1000</span></p>
+						</div>
+						
+					<div class="moveboxed">
+						<p><span class="Moves" id=move_count>0</span></p>
+					</div>
+
+
+					<div class="timerboxed">
+						<p><span id=min>0</span>:<span id=sec>00</span></p>
+					</div>
+			</div>
+				<div id="infoSquare">
+					<br>
+				</div>			
+		</div>
+
+
+	<!-- In the following, I added a type and a code.
+		 The type refers to what it will be match with.
+		 The id is the individual element. -->
+
+		<ul class="list">
+			<li class="card" type=1 id=001>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=1 id=002>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=2 id=003>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=2 id=004>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=3 id=005>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=3 id=006>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=4 id=007>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=4 id=008>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=5 id=009>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=5 id=010>
+				<i >.</i>
+				<img>
+			</li>
+			<li class="card" type=6 id=011>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=6 id=012>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=7 id=013>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=7 id=014>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=8 id=015>
+				<i>.</i>
+				<img>
+			</li>
+			<li class="card" type=8 id=016>
+				<i>.</i>
+				<img>
+			</li>
+		</ul>
+
+
+
+<!-- </div> -->
+
+<!-- </div> -->
+<!-- </div class="grid"> -->
+	</div>
+		 <script src="memory_game.js"></script>
+	 </div>
+</body>
+</html>

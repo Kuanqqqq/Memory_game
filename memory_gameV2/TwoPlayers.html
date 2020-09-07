@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Memory Multi Play</title>
+        <style type="text/css">
+#button{
+    position: absolute;
+    left:49%;
+    top:48%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    
+    
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #scaled-frame  { zoom: 1;  }
+}
+
+.wrapper {
+    position: fixed;
+}
+
+.top {
+    top: 0px;
+    bottom: 50%;
+    transform: rotate(180deg);
+}
+.bottom {
+    top: 50%;
+    bottom: 0px;
+}
+.left {
+    left: 0px;
+    right: 50%;
+}
+.right {
+    left: 0%;
+    right: 0px;
+}
+
+.bwrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+iframe {
+    margin: 0px;
+    border: 0px;
+    width: 200%;
+    height: 200%;
+
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.5);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+}
+        </style>
+
+    <link rel="stylesheet" href="multigame.css">  
+    </head>
+    <body>
+            
+
+        <div class="wrapper top right">
+            <iframe src="memory_game4.html" id=if2></iframe>
+        </div>
+
+        <div class="wrapper bottom right">
+            <iframe src="memory_game4.html" id=if4></iframe>
+        </div>
+
+        <form id="button"  action="menu.html">
+                <input name = "submit" type="image" src="imgs/back.png"/>
+            </form>	
+
+        <script src="multiplayer_winner.js"></script>
+    </body>
+</html>

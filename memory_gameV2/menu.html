@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<title>EPL Memory Game</title>
+        <link rel="stylesheet" href="menu.css">
+        <style>
+            #button1{
+                position: absolute;
+                left:800px;
+                top:200px;
+                
+            }
+            #button2{
+                position: absolute;
+                left:800px;
+                top:350px;
+               
+            }
+            #button3{
+                position: absolute;
+                left:700px;
+                top:500px;
+            }
+            #embed{
+              position: absolute;
+              left:10%;
+              top:10%;
+            }
+
+
+            </style>
+</head>
+
+
+
+<body>
+        <script>
+				/* Get the documentElement (<html>) to display the page in fullscreen */
+                var elem = document.documentElement;
+				
+				/* View in fullscreen */
+				function openFullscreen() {
+				  if (elem.requestFullscreen) {
+					elem.requestFullscreen();
+				  } else if (elem.mozRequestFullScreen) { /* Firefox */
+					elem.mozRequestFullScreen();
+				  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+					elem.webkitRequestFullscreen();
+				  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+					elem.msRequestFullscreen();
+				  }
+				}
+				
+				/* Close fullscreen */
+				function closeFullscreen() {
+				  if (document.exitFullscreen) {
+					document.exitFullscreen();
+				  } else if (document.mozCancelFullScreen) { /* Firefox */
+					document.mozCancelFullScreen();
+				  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+					document.webkitExitFullscreen();
+				  } else if (document.msExitFullscreen) { /* IE/Edge */
+					document.msExitFullscreen();
+				  }
+				}
+	
+                </script>
+                
+				
+                
+            
+        <font size=7; style="color:aliceblue";>Memory Game </font>
+        <form id="button1" action="memory_game.html">
+            <input name = "submit" type="image"  src="imgs/single.png" />
+        </form>
+
+        <form id="button2" action="TwoPlayers.html">
+                <input name = "submit" type="image"  src="imgs/duo.png"/>
+            </form>
+
+
+        <form id="button3" action="MultiGame.html">
+                <input name = "submit" type="image"  src="imgs/four.png"/>
+            </form>
+
+        
+        <embed left="10%" right="10%" height="80" width="100" src="sounds/test.mp3" autostart="false" loop="false"></embed>
+        
+
+        
+
+
+</body>

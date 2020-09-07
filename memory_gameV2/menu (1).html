@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+        <script type="text/javascript">
+            myAudio = new Audio('Trivia Song No Intro_0.wav');
+            myAudio.loop = true;
+            myAudio.play();
+        </script>
+
+		<meta charset="utf-8">
+		<title>EPL Memory Game</title>
+        <link rel="stylesheet" href="memory_game.css">
+        <style>
+                #button {
+                    width: 6em;
+                    border: 2px solid green;
+                    background: #ffe;
+                    border-radius: 5px;
+                }
+                a {
+                    display: block;
+                    width: 100%;
+                    line-height: 2em;
+                    text-align: center;
+                    text-decoration: none;
+                    border-radius: 5px;
+                }
+                a:hover {
+                    color: red;
+                    background: #eff;
+                }
+                </style>
+
+</head>
+
+<!-- Main HTML body -->
+<body>
+        <form id="button" action="memory_game.html">
+            <input type="submit" value="SinglePlayer" />
+        </form>
+
+        <form id = "button" action="MultiGame.html">
+                <input type="submit" value="Multiplayer" />
+            </form>
+</body>
+
